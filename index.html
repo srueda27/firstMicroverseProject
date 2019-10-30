@@ -1,22 +1,59 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="styles.css" />
     <title>Page Title</title>
   </head>
   <body>
-    <p>Hello World we are so far developers!</p>
+    <!-- <p>Hello World we are so far developers!</p> -->
     <header id="header">
-        <img id="header-img" src="logo.jpeg">
-        <nav id="nav-bar">
-            <a href="#services" class="nav-link">Services</a>
-            <a href="#contact" class="nav-link">Contact</a>
-            <a href="#products" class="nav-link">Products</a>
-        </nav>
+      <img id="header-img" src="logo.jpeg" />
+      <nav id="nav-bar">
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#products" class="nav-link">Products</a>
+      </nav>
     </header>
-    <section id="services"><p>Services</p></section>
-    <section id="contact"><p>Contact</p></section>
-    <section id="products">
-        <video src="https://www.youtube.com/watch?v=ebFmLmkEcDg" width="400px" height="300px" controls></video>
+    <section id="services">
+      <h1>Services</h1>
+      <p>
+        It is a long established fact that a reader will be distracted by the
+        readable content of a page when looking at its layout. The point of
+        using Lorem Ipsum is that it has a more-or-less normal distribution of
+        letters, as opposed to using 'Content here, content here', making it
+        look like readable English. Many desktop publishing packages and web
+        page editors now use Lorem Ipsum as their default model text, and a
+        search for 'lorem ipsum' will uncover many web sites still in their
+        infancy. Various versions have evolved over the years, sometimes by
+        accident, sometimes on purpose (injected humour and the like).
+      </p>
     </section>
+    <div class="flex-Container">
+      <section id="products">
+        <h1>Products</h1>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/ebFmLmkEcDg"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </section>
+      <section id="contact">
+        <h1>Contact</h1>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <div>
+            <label for="email"></label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email address"
+            />
+          </div>
+          <input type="submit" id="submit" value="Submit" />
+        </form>
+      </section>
+    </div>
   </body>
 </html>

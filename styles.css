@@ -1,0 +1,36 @@
+#nav-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* #header {
+  text-align: center;
+} */
+
+#nav-bar .nav-link {
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    background-color: aqua;
+  }
+}
+
+html {
+  text-align: center;
+}
+
+#services {
+  width: 560px;
+  margin: 0 auto;
+}
+section {
+  padding: 20px 0;
+}
+
+.flex-Container {
+  display: flex;
+  flex-direction: column;
+}
